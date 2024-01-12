@@ -45,6 +45,8 @@ class Parametr(WeightData):
         verbose_name = "Параметр"
         verbose_name_plural = "Параметры"
         
+    is_research = models.BooleanField("Является исследованием?", default=True)
+        
 class Conclusion(WeightData):
 
     class Meta:
